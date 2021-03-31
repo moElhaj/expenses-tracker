@@ -1,0 +1,12 @@
+.orientation svg {
+    fill: var(--black);
+    margin-bottom: 1rem;
+}
+
+.error {
+    color: #fff;
+}
+
+.loader {
+    background: var(--violet);
+}
