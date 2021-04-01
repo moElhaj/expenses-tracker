@@ -1,0 +1,63 @@
+.entry-form {
+    margin-top: 1rem;
+}
+
+.text-input {
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 7px;
+    background: var(--rgba2);
+    -webkit-appearance: none;
+}
+
+.text-input-info {
+    font-size: 11px;
+    color: var(--dark);
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+.radio {
+    margin-right: 2rem;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--dark);
+    transition: all .3s;
+}
+
+.radio-text {
+    margin-left: 2rem;
+}
+
+.radio:hover input~.checkmark {
+    background-color: var(--dark);
+}
+
+.radio input:checked~.checkmark {
+    background-color: var(--light);
+    border: 5px solid var(--blue);
+}
